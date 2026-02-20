@@ -13,6 +13,7 @@ export const HomePage = () => {
     >
       <WelcomeBanner />
       <Stack spacing={16} alignItems="center">
+        <Divider />
         {projectSummaries.map((project, index) => (
           <>
             <ProjectSummary key={project.name} project={project} />
