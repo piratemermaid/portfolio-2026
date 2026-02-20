@@ -1,9 +1,11 @@
+import { HomePage } from "./components/HomePage";
+
 function App() {
   return (
     <main>
-      <h1>Portfolio</h1>
+      <HomePage />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
