@@ -1,7 +1,7 @@
 import playlistSummaryImage from "../assets/ballroom-playlist/playlist.png";
 import dmkTokenGuideSummaryImage from "../assets/dmk-token-guide/homepage.png";
 import hadesCompanionSummaryImage from "../assets/hades-companion/hades-clears.png";
-import palworldCompanionSummaryImage from "../assets/palworld-companion/work-suitability.png";
+// import palworldCompanionSummaryImage from "../assets/palworld-companion/work-suitability.png";
 
 export type Project = {
   name: string;
@@ -48,14 +48,14 @@ export const projectSummaries = [
     tags: ["React", "TypeScript", "React Router", "Vercel"],
     demoUrl: "https://hades-companion.vercel.app/",
   },
-  {
-    name: "Palworld Companion",
-    description: `A companion app for the game Palworld. It allows players to 
-        quickly find which pals they need to catch, pal work suitability, good 
-        breeding pairs, and more.`,
-    imgSrc: palworldCompanionSummaryImage,
-    year: "2024",
-    tags: ["React", "TypeScript", "React Router", "Vercel"],
-    demoUrl: "https://palworld-interactive-wiki-46o8.vercel.app/my_pals",
-  },
+  // {
+  //   name: "Palworld Companion",
+  //   description: `A companion app for the game Palworld. It allows players to
+  //       quickly find which pals they need to catch, pal work suitability, good
+  //       breeding pairs, and more.`,
+  //   imgSrc: palworldCompanionSummaryImage,
+  //   year: "2024",
+  //   tags: ["React", "TypeScript", "React Router", "Vercel"],
+  //   demoUrl: "https://palworld-interactive-wiki-46o8.vercel.app/my_pals",
+  // },
 ];

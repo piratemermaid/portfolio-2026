@@ -9,7 +9,13 @@ export const HomePage = () => {
   return (
     <Stack
       spacing={8}
-      sx={{ p: 4, maxWidth: 1200, margin: "0 auto", alignItems: "center" }}
+      sx={{
+        p: 4,
+        maxWidth: 1200,
+        margin: "0 auto",
+        alignItems: "center",
+        mb: 16,
+      }}
     >
       <WelcomeBanner />
       <Stack spacing={16} alignItems="center">

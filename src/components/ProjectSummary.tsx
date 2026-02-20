@@ -12,8 +12,14 @@ export const ProjectSummary = ({ project }: Props) => {
       <Grid size={{ xs: 12, md: 6 }}>
         <Stack spacing={2}>
           <Stack>
-            <Typography variant="h2">{project.name}</Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="h2" sx={{ fontFamily: "Domine, serif" }}>
+              {project.name}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ fontFamily: "Domine, serif" }}
+            >
               {project.year}
             </Typography>
           </Stack>
@@ -40,7 +46,12 @@ export const ProjectSummary = ({ project }: Props) => {
           )}
           <Stack direction="row" spacing={1}>
             {project.tags.map((tag) => (
-              <Chip key={tag} label={tag} size="small" />
+              <Chip
+                key={tag}
+                label={tag}
+                size="small"
+                sx={{ backgroundColor: "neutral.dark" }}
+              />
             ))}
           </Stack>
         </Stack>
