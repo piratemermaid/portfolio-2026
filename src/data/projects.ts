@@ -1,3 +1,8 @@
+import playlistSummaryImage from "../assets/ballroom-playlist/playlist.png";
+import dmkTokenGuideSummaryImage from "../assets/dmk-token-guide/homepage.png";
+import hadesCompanionSummaryImage from "../assets/hades-companion/hades-clears.png";
+import palworldCompanionSummaryImage from "../assets/palworld-companion/work-suitability.png";
+
 export type Project = {
   name: string;
   description: string;
@@ -15,7 +20,7 @@ export const projectSummaries = [
             dance by combining all ballroom songs into one playlist and filtering 
             by dance type and BPM. It uses Spotify API for the music and allows users 
             to create an account and save their playlists and custom tags.`,
-    imgSrc: "/src/assets/ballroom-playlist/playlist.png",
+    imgSrc: playlistSummaryImage,
     year: "2026 - in progress!",
     tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Docker"],
   },
@@ -28,7 +33,7 @@ export const projectSummaries = [
             learning experience and I'm still so proud of what I accomplished. I 
             handed it down to a predecessor who has removed user accounts, but you 
             can still demo the app and see some of the features I built.`,
-    imgSrc: "/src/assets/dmk-token-guide/homepage.png",
+    imgSrc: dmkTokenGuideSummaryImage,
     tags: ["React", "Redux", "Node.js", "Express", "PostgreSQL", "Nginx"],
     year: "2018 - 2022",
     demoUrl: "https://dmktokenguide.com/",
@@ -38,7 +43,7 @@ export const projectSummaries = [
     description: `A very simple companion app for the game Hades. It allows 
         players to track their progress and quickly see what achievements they 
         have left to unlock.`,
-    imgSrc: "/src/assets/hades-companion/hades-clears.png",
+    imgSrc: hadesCompanionSummaryImage,
     year: "2025",
     tags: ["React", "TypeScript", "React Router", "Vercel"],
     demoUrl: "https://hades-companion.vercel.app/",
@@ -48,7 +53,7 @@ export const projectSummaries = [
     description: `A companion app for the game Palworld. It allows players to 
         quickly find which pals they need to catch, pal work suitability, good 
         breeding pairs, and more.`,
-    imgSrc: "/src/assets/palworld-companion/work-suitability.png",
+    imgSrc: palworldCompanionSummaryImage,
     year: "2024",
     tags: ["React", "TypeScript", "React Router", "Vercel"],
     demoUrl: "https://palworld-interactive-wiki-46o8.vercel.app/my_pals",
