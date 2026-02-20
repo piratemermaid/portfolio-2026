@@ -4,6 +4,7 @@ export type Project = {
   imgSrc: string;
   year: string;
   tags: string[];
+  demoUrl?: string;
 };
 
 export const projectSummaries = [
@@ -12,7 +13,8 @@ export const projectSummaries = [
     description: `A one-stop-shop playlist for ballroom teachers and students. 
             It removes unnecessary time spent searching for the right song for a 
             dance by combining all ballroom songs into one playlist and filtering 
-            by dance type and BPM.`,
+            by dance type and BPM. It uses Spotify API for the music and allows users 
+            to create an account and save their playlists and custom tags.`,
     imgSrc: "/src/assets/ballroom-playlist/playlist.png",
     year: "2026 - in progress!",
     tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Docker"],
@@ -23,10 +25,13 @@ export const projectSummaries = [
             provided many features for its 11,000+ players over the 4 years it 
             was live under my ownership. It was my first full-stack application 
             as well as first deployed application with users. It was a fantastic 
-            learning experience and I'm still so proud of what I accomplished.`,
+            learning experience and I'm still so proud of what I accomplished. I 
+            handed it down to a predecessor who has removed user accounts, but you 
+            can still demo the app and see some of the features I built.`,
     imgSrc: "/src/assets/dmk-token-guide/homepage.png",
     tags: ["React", "Redux", "Node.js", "Express", "PostgreSQL", "Nginx"],
     year: "2018 - 2022",
+    demoUrl: "https://dmktokenguide.com/",
   },
   {
     name: "Hades Companion",
@@ -36,6 +41,7 @@ export const projectSummaries = [
     imgSrc: "/src/assets/hades-companion/hades-clears.png",
     year: "2025",
     tags: ["React", "TypeScript", "React Router", "Vercel"],
+    demoUrl: "https://hades-companion.vercel.app/",
   },
   {
     name: "Palworld Companion",
@@ -45,5 +51,6 @@ export const projectSummaries = [
     imgSrc: "/src/assets/palworld-companion/work-suitability.png",
     year: "2024",
     tags: ["React", "TypeScript", "React Router", "Vercel"],
+    demoUrl: "https://palworld-interactive-wiki-46o8.vercel.app/my_pals",
   },
 ];

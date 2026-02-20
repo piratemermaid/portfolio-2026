@@ -1,5 +1,5 @@
-import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
-
+import { Box, Button, Chip, Grid, Stack, Typography } from "@mui/material";
+import { OpenInNew as DemoIcon } from "@mui/icons-material";
 import type { Project } from "../data/projects";
 
 type Props = {
@@ -18,6 +18,26 @@ export const ProjectSummary = ({ project }: Props) => {
             </Typography>
           </Stack>
           <Typography variant="body1">{project.description}</Typography>
+          {project.demoUrl ? (
+            <Button
+              variant="contained"
+              color="primary"
+              href={project.demoUrl}
+              target="_blank"
+              sx={{
+                width: "fit-content",
+                textTransform: "none",
+                borderRadius: 8,
+              }}
+              endIcon={<DemoIcon sx={{ ml: -0.5 }} />}
+            >
+              View It Live
+            </Button>
+          ) : (
+            <Typography variant="body2" color="text.secondary">
+              More info available upon request
+            </Typography>
+          )}
           <Stack direction="row" spacing={1}>
             {project.tags.map((tag) => (
               <Chip key={tag} label={tag} size="small" />
