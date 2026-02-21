@@ -17,7 +17,12 @@ const palette = {
 };
 
 export const theme = createTheme({
-  palette,
+  palette: {
+    ...palette,
+    background: {
+      default: palette.neutral.dark,
+    },
+  },
   typography: {
     fontFamily: "Outfit, sans-serif",
   },
