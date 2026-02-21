@@ -1,9 +1,9 @@
 import { Stack } from "@mui/material";
 
-import { WelcomeBanner } from "./layout/WelcomeBanner";
-import { ProjectSummary } from "./ProjectSummary";
+import { WelcomeBanner } from "../components/layout/WelcomeBanner";
+import { ProjectSummary } from "../components/ProjectSummary";
 import { projectSummaries } from "../data/projects";
-import { Divider } from "./Divider";
+import { Divider } from "../components/Divider";
 
 export const HomePage = () => {
   return (
