@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     tanstackRouter({
       routesDirectory: './src/routes',
+      autoCodeSplitting: false,
     }),
     react(),
   ],

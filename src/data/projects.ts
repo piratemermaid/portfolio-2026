@@ -10,6 +10,7 @@ export type Project = {
   year: string;
   tags: string[];
   demoUrl?: string;
+  url?: string;
 };
 
 export const projectSummaries = [
@@ -23,6 +24,7 @@ export const projectSummaries = [
     imgSrc: playlistSummaryImage,
     year: "2026 - in progress!",
     tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Docker"],
+    url: "/ballroom_playlist",
   },
   {
     name: "DMK Token Guide",
