@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 
 import { WelcomeBanner } from "../components/layout/WelcomeBanner";
 import { ProjectSummary } from "../components/ProjectSummary";

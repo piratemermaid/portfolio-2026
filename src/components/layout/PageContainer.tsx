@@ -5,5 +5,19 @@ type Props = {
 };
 
 export const PageContainer = ({ children }: Props) => {
-  return <Box sx={{ p: 4, maxWidth: 1200, margin: "0 auto" }}>{children}</Box>;
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: 1200,
+        margin: "0 auto",
+        p: 4,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      {children}
+    </Box>
+  );
 };
