@@ -1,9 +1,10 @@
-import { Box, Button, Chip, Grid, Stack, Typography } from "@mui/material";
+import { Button, Chip, Grid, Stack, Typography } from "@mui/material";
 import {
   OpenInNew as DemoIcon,
   ChevronRight as ProjectIcon,
 } from "@mui/icons-material";
 import type { Project } from "../data/projects";
+import { ImageLightbox } from "./ImageLightbox";
 
 type Props = {
   project: Project;
@@ -15,9 +16,7 @@ export const ProjectSummary = ({ project }: Props) => {
       <Grid size={{ xs: 12, md: 6 }}>
         <Stack spacing={2}>
           <Stack>
-            <Typography variant="h2" sx={{ fontFamily: "Domine, serif" }}>
-              {project.name}
-            </Typography>
+            <Typography variant="h2">{project.name}</Typography>
             <Typography
               variant="body2"
               color="text.secondary"
@@ -75,14 +74,14 @@ export const ProjectSummary = ({ project }: Props) => {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <Box>
+        <ImageLightbox src={project.imgSrc} alt={project.name}>
           <img
             src={project.imgSrc}
             alt={project.name}
             width="100%"
             style={{ border: "1px solid lightgray", borderRadius: 4 }}
           />
-        </Box>
+        </ImageLightbox>
       </Grid>
     </Grid>
   );

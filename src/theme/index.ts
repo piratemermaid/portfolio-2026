@@ -25,5 +25,17 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: "Outfit, sans-serif",
+    h1: {
+      fontFamily: "Domine, serif",
+    },
+    h2: {
+      fontFamily: "Domine, serif",
+    },
+    h3: {
+      fontFamily: "Domine, serif",
+    },
+    h4: {
+      fontFamily: "Domine, serif",
+    },
   },
 });

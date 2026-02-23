@@ -1,5 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 
+import { ImageLightbox } from "../components/ImageLightbox";
 import { PageContainer } from "../components/layout/PageContainer";
 import { bobaAndYukiImage, paraglidingImage } from "../images";
 
@@ -26,10 +27,14 @@ export const AboutMePage = () => {
               and most recently, paragliding.
             </Typography>
           </Stack>
-          <img src={paraglidingImage} alt="Paragliding" width="300px" />
+          <ImageLightbox src={paraglidingImage} alt="Paragliding">
+            <img src={paraglidingImage} alt="Paragliding" width="300px" />
+          </ImageLightbox>
         </Stack>
         <Stack spacing={4} direction="row" alignItems="center">
-          <img src={bobaAndYukiImage} alt="Boba and Yuki" width="300px" />
+          <ImageLightbox src={bobaAndYukiImage} alt="Boba and Yuki">
+            <img src={bobaAndYukiImage} alt="Boba and Yuki" width="300px" />
+          </ImageLightbox>
           <Stack spacing={2}>
             <Typography
               variant="h3"
